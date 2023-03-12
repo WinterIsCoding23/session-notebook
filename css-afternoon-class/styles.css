@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: papayawhip;
+
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color:deepskyblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*class selectors */
+
+.main-content {
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+}
+
+.main-section {
+    background-color: ghostwhite;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius:10px;
+}
+
+.box {
+    width: 100%;
+    height:100px;
+    text-align: center;
+    font-size:100px;
+}
+
+.box--pink {
+    background-color:hotpink;
+    color:aquamarine;
+}
+
+/* Attribute Selectore*/
+button[type="button"] {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+}
+
+ul[role="list"] {
+    list-style-type: none;
+}
+
+a[href="https"] {
+    color:hotpink;
+}
+
+/* Pseudo-Classes*/
+a:hover {
+    font-weight: bold;
+}
+
+button:active {
+    background-color:tomato; 
+}
+
+input:focus {
+    outline: 10px dotted tomato;
+    border: none;
+    border-radius:10px;
+}
+
+.main-section:nth-child(3) {
+    background-color: salmon;
+}
+
+/* Pseudo-Elements */
+a[href="https"] ::before {
+    content:"🎂";
+    margin-right: 10px;
+}
+
+p::first-line {
+    font-size:100px;
+}
+
+/* ID-Selector has the highest specificity/rank*/
+#very-important-text {
+    color:orangered;
+}
+
+/*Descendant combinator - doesnt override the ID*/
+.main-section .text {
+    color:skyblue;
+}
+
+/*CHILD-combinator*/
+.main-section > article {
+    padding:20px;
+    border:20px dotted lightgreen;
+}
+
+/*Adjascent sibling selector*/
+div + span {
+    color:hotpink;
+}
