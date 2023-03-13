@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    background-color: aqua;
+    color:crimson; /*ul - Liste ist crimson weil ul die Eigenschaft vom parent erbt*/
+}
+
+body {
+    color:violet;
+}
+
+/* ------------------------------
+    CSS Cascade
+last element wins
+-------------------------------*/
+
+p {
+    color:aquamarine;
+    font-size: 10px;
+}
+
+p {
+    color:orchid;
+    font-size: 30px;
+}
+
+/* ------------------------------
+    CSS Specificity
+id > class > tag > * 
+-------------------------------*/
+#title {
+    color: lightcoral;
+}
+
+.title {
+    color:blue;
+}
+
+h1 {
+    color:green;
+}
+

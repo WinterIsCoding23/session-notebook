@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Structure</title>    
+    <link rel="stylesheet" href="./css/bem.css"/>
+    <!--...a second more specific stylesheet can be linked underneath <link rel="stylesheet" href="./style.css"/> -->
+</head>
+<body>
+    <!-- 
+            section.className
+            div#idName
+            h1.className#idName
+    -->
+    <main>
+        <nav>
+            <h1 class="title" id="title">CSS-Structures</h1>
+        </nav>
+        <section class="card card--primary-color"> 
+            <!-- class = [Block]--[Element]-->
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex totam possimus minus, natus perspiciatis harum, asperiores soluta, incidunt in voluptas? Illum quaerat provident eveniet obcaecati ratione facere molestiae alias.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae reiciendis iure quam at! Assumenda provident accusantium sunt itaque porro quos, molestiae est et nulla eius, dignissimos quia asperiores! Rem, magni!
+            </p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </section>
+        <section class="card card--secondary-color">
+            <!-- secondary-color is applied to the BLOCK card-->
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex totam possimus minus, natus perspiciatis harum, asperiores soluta, incidunt in voluptas? Illum quaerat provident eveniet obcaecati ratione facere molestiae alias.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae reiciendis iure quam at! Assumenda provident accusantium sunt itaque porro quos, molestiae est et nulla eius, dignissimos quia asperiores! Rem, magni!
+            </p>
+        </section>
+    </main>
+    
+</body>
+</html>

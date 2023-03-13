@@ -1,0 +1,31 @@
+@import './variable.css';
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/*introduce variables here (if not in separate doc*/
+
+.card {
+    margin:20px auto;
+    padding:30px;
+    border:2px solid green;
+    color:var(--main-color);
+}
+
+.card__title {
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color:var(--card-title-color);
+}
+
+.card--primary-color {
+    border-color: var(--primary-color);
+}
+
+.card--secondary-color {
+    border-color: var(--secondary-color);
+    /*border: 4px dotted var(--secondary-color);*/
+}
+

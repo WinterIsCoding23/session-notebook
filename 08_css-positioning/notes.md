@@ -38,3 +38,5 @@ top: 0;
 
 [copy code-lines in VC Code: alt + shift + arrow up/down -> copies on top/bottom of the marked lines]
 
+Github-Trick:
+Press "." when looking at any code -> VC Code opens
